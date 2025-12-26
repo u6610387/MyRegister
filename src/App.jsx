@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter> 
       <Routes>
-        {/* Route to your component */}
         <Route path="/" element={<Register />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
